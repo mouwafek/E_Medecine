@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2020 06:38:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medec" name="com.e_medecine.entities.PatientM" optimistic-lock="version" table="patient_m">
+    <composite-id class="com.e_medecine.entities.PatientMId" name="id">
+      <key-property name="idPat" type="int">
+        <column name="ID_PAT"/>
+      </key-property>
+      <key-property name="idM" type="int">
+        <column name="ID_M"/>
+      </key-property>
+    </composite-id>
+    <property name="dateDM" type="date">
+      <column length="0" name="DATE_D_M"/>
+    </property>
+    <property name="dateFM" type="date">
+      <column length="0" name="DATE_F_M"/>
+    </property>
+    <property name="traitement" type="string">
+      <column length="250" name="TRAITEMENT"/>
+    </property>
+    <property name="arretTrav" type="java.lang.Boolean">
+      <column name="ARRET_TRAV"/>
+    </property>
+  </class>
+</hibernate-mapping>

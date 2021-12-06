@@ -1,0 +1,22 @@
+SMAP
+espacePatient_jsp.java
+JSP
+*S JSP
+*F
++ 0 espacePatient.jsp
+espacePatient.jsp
+*L
+5,25:51
+31,2:78
+32,2:80
+34,2:83
+35,45:85
+81,4:132
+84,12:136
+96:148,3
+97,7:151
+104:158,3
+105,131:161
+236,4:293
+239,4:297
+*E

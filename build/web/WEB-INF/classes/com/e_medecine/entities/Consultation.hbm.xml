@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2020 06:38:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medec" name="com.e_medecine.entities.Consultation" optimistic-lock="version" table="consultation">
+    <id name="idCon" type="java.lang.Integer">
+      <column name="ID_CON"/>
+      <generator class="identity"/>
+    </id>
+    <property name="idPat" type="int">
+      <column name="ID_PAT" not-null="true"/>
+    </property>
+    <property name="idProf" type="int">
+      <column name="ID_PROF" not-null="true"/>
+    </property>
+    <property name="idRend" type="int">
+      <column name="ID_REND" not-null="true"/>
+    </property>
+    <property name="dateCon" type="date">
+      <column length="0" name="DATE_CON"/>
+    </property>
+    <property name="heureCon" type="time">
+      <column length="0" name="HEURE_CON"/>
+    </property>
+    <property name="ordonnance" type="string">
+      <column length="65535" name="ORDONNANCE"/>
+    </property>
+  </class>
+</hibernate-mapping>

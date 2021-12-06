@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2020 06:38:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medec" name="com.e_medecine.entities.RendezVous" optimistic-lock="version" table="rendez_vous">
+    <id name="idRend" type="java.lang.Integer">
+      <column name="ID_REND"/>
+      <generator class="identity"/>
+    </id>
+    <property name="dateRend" type="date">
+      <column length="0" name="DATE_REND"/>
+    </property>
+    <property name="heureRend" type="time">
+      <column length="0" name="HEURE_REND"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2020 06:38:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medec" name="com.e_medecine.entities.Allergie" optimistic-lock="version" table="allergie">
+    <id name="idAl" type="java.lang.Integer">
+      <column name="ID_AL"/>
+      <generator class="identity"/>
+    </id>
+    <property name="produitAl" type="string">
+      <column length="200" name="PRODUIT_AL"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2020 06:38:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medec" name="com.e_medecine.entities.ProfessionnelSante" optimistic-lock="version" table="professionnel_sante">
+    <id name="idProf" type="java.lang.Integer">
+      <column name="ID_PROF"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nomProf" type="string">
+      <column length="50" name="NOM_PROF"/>
+    </property>
+    <property name="prenomProf" type="string">
+      <column length="50" name="PRENOM_PROF"/>
+    </property>
+    <property name="loginProf" type="string">
+      <column length="50" name="LOGIN_PROF"/>
+    </property>
+    <property name="passwordProf" type="string">
+      <column length="50" name="PASSWORD_PROF"/>
+    </property>
+    <property name="dateNaisProf" type="date">
+      <column length="0" name="DATE_NAIS_PROF"/>
+    </property>
+    <property name="adresseProf" type="string">
+      <column length="200" name="ADRESSE_PROF"/>
+    </property>
+    <property name="emailProf" type="string">
+      <column length="100" name="EMAIL_PROF"/>
+    </property>
+    <property name="telMob" type="java.lang.Integer">
+      <column name="TEL_MOB"/>
+    </property>
+    <property name="etatProf" type="java.lang.Boolean">
+      <column name="ETAT_PROF"/>
+    </property>
+    <property name="genreProf" type="string">
+      <column length="20" name="GENRE_PROF"/>
+    </property>
+    <property name="diplome" type="string">
+      <column length="65535" name="DIPLOME"/>
+    </property>
+    <property name="photoIdentite" type="binary">
+      <column name="PHOTO_IDENTITE"/>
+    </property>
+    <property name="visiteADomicile" type="java.lang.Boolean">
+      <column name="VISITE_A_DOMICILE"/>
+    </property>
+    <property name="idSpec" type="int">
+      <column name="ID_SPEC" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

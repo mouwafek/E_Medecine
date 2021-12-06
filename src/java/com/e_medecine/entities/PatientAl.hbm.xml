@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2020 06:38:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medec" name="com.e_medecine.entities.PatientAl" optimistic-lock="version" table="patient_al">
+    <composite-id class="com.e_medecine.entities.PatientAlId" name="id">
+      <key-property name="idPat" type="int">
+        <column name="ID_PAT"/>
+      </key-property>
+      <key-property name="idAl" type="int">
+        <column name="ID_AL"/>
+      </key-property>
+    </composite-id>
+    <property name="dateDAl" type="date">
+      <column length="0" name="DATE_D_AL"/>
+    </property>
+    <property name="typeReact" type="string">
+      <column length="250" name="TYPE_REACT"/>
+    </property>
+    <property name="etatReact" type="string">
+      <column length="250" name="ETAT_REACT"/>
+    </property>
+  </class>
+</hibernate-mapping>

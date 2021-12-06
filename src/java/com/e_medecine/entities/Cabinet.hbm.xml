@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2020 06:38:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medec" name="com.e_medecine.entities.Cabinet" optimistic-lock="version" table="cabinet">
+    <id name="idCab" type="java.lang.Integer">
+      <column name="ID_CAB"/>
+      <generator class="identity"/>
+    </id>
+    <property name="idProf" type="int">
+      <column name="ID_PROF" not-null="true"/>
+    </property>
+    <property name="idSec" type="int">
+      <column name="ID_SEC" not-null="true"/>
+    </property>
+    <property name="adresseCab" type="string">
+      <column length="200" name="ADRESSE_CAB"/>
+    </property>
+    <property name="gouvernorat" type="string">
+      <column length="20" name="GOUVERNORAT"/>
+    </property>
+    <property name="delegation" type="string">
+      <column length="50" name="DELEGATION"/>
+    </property>
+    <property name="telFixe" type="java.lang.Integer">
+      <column name="TEL_FIXE"/>
+    </property>
+    <property name="descriptionCab" type="string">
+      <column length="65535" name="DESCRIPTION_CAB"/>
+    </property>
+    <property name="prixVisite" type="java.lang.Float">
+      <column name="PRIX_VISITE" precision="12" scale="0"/>
+    </property>
+    <property name="paimentCarteB" type="java.lang.Boolean">
+      <column name="PAIMENT_CARTE_B"/>
+    </property>
+  </class>
+</hibernate-mapping>

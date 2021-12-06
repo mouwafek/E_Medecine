@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2020 06:38:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medec" name="com.e_medecine.entities.Question" optimistic-lock="version" table="question">
+    <id name="idQ" type="java.lang.Integer">
+      <column name="ID_Q"/>
+      <generator class="identity"/>
+    </id>
+    <property name="idPat" type="int">
+      <column name="ID_PAT" not-null="true"/>
+    </property>
+    <property name="categorie" type="string">
+      <column length="100" name="CATEGORIE"/>
+    </property>
+    <property name="question" type="string">
+      <column length="65535" name="QUESTION"/>
+    </property>
+  </class>
+</hibernate-mapping>

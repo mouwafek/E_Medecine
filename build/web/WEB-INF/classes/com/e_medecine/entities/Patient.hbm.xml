@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2020 06:38:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medec" name="com.e_medecine.entities.Patient" optimistic-lock="version" table="patient">
+    <id name="idPat" type="java.lang.Integer">
+      <column name="ID_PAT"/>
+      <generator class="identity"/>
+    </id>
+    <property name="idAv" type="int">
+      <column name="ID_AV" not-null="true"/>
+    </property>
+    <property name="nomPat" type="string">
+      <column length="50" name="NOM_PAT"/>
+    </property>
+    <property name="prenomPat" type="string">
+      <column length="50" name="PRENOM_PAT"/>
+    </property>
+    <property name="loginPat" type="string">
+      <column length="50" name="LOGIN_PAT"/>
+    </property>
+    <property name="passwordPat" type="string">
+      <column length="50" name="PASSWORD_PAT"/>
+    </property>
+    <property name="dateNaisPat" type="date">
+      <column length="0" name="DATE_NAIS_PAT"/>
+    </property>
+    <property name="adressePat" type="string">
+      <column length="200" name="ADRESSE_PAT"/>
+    </property>
+    <property name="emailPat" type="string">
+      <column length="100" name="EMAIL_PAT"/>
+    </property>
+    <property name="telMobPat" type="java.lang.Integer">
+      <column name="TEL_MOB_PAT"/>
+    </property>
+    <property name="age" type="java.lang.Integer">
+      <column name="AGE"/>
+    </property>
+    <property name="genrePat" type="string">
+      <column length="20" name="GENRE_PAT"/>
+    </property>
+    <property name="poid" type="java.lang.Integer">
+      <column name="POID"/>
+    </property>
+    <property name="groupeSanguin" type="string">
+      <column length="20" name="GROUPE_SANGUIN"/>
+    </property>
+    <property name="travail" type="string">
+      <column length="100" name="TRAVAIL"/>
+    </property>
+  </class>
+</hibernate-mapping>

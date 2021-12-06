@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10 avr. 2020 06:38:06 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="medec" name="com.e_medecine.entities.Medicament" optimistic-lock="version" table="medicament">
+    <id name="idMed" type="java.lang.Integer">
+      <column name="ID_MED"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nomMed" type="string">
+      <column length="200" name="NOM_MED"/>
+    </property>
+    <property name="formeMed" type="string">
+      <column length="200" name="FORME_MED"/>
+    </property>
+    <property name="classeTherp" type="string">
+      <column length="200" name="CLASSE_THERP"/>
+    </property>
+    <property name="sousClasseTherp" type="string">
+      <column length="200" name="SOUS_CLASSE_THERP"/>
+    </property>
+    <property name="dateValidite" type="date">
+      <column length="0" name="DATE_VALIDITE"/>
+    </property>
+    <property name="photoMed" type="binary">
+      <column name="PHOTO_MED"/>
+    </property>
+    <property name="quantite" type="java.lang.Integer">
+      <column name="QUANTITE"/>
+    </property>
+    <property name="idPat" type="int">
+      <column name="ID_PAT" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
